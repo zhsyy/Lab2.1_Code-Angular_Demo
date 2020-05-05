@@ -23,10 +23,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build":"ng build --base-href ./",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:github": "ng build --prod --output-path docs --base-href /demo-test/"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
