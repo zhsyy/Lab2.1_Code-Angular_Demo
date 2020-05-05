@@ -291,14 +291,14 @@ var CartComponent = /** @class */ (function () {
     }
     CartComponent.prototype.ngOnInit = function () {
         this.items = this.cartService.getItems();
-    };
-    CartComponent.prototype.clear = function () {
-        this.cartService.clearCart();
-        this.items = this.cartService.getItems();
         var list = this.storage.getItem("cartList");
         if (list) {
             this.items = list;
         }
+    };
+    CartComponent.prototype.clear = function () {
+        this.cartService.clearCart();
+        this.items = this.cartService.getItems();
     };
     CartComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
